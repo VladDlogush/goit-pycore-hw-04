@@ -28,7 +28,7 @@ def total_salary(path):
     
     except (FileNotFoundError, IOError):
         print("Error: File not found or access error (the file may be corrupted)")
-        return 0, 0
+    return 0, 0
 
 total, average = total_salary("task-1/salary.txt")
 print(f"Total salary amount: {int(total)}, Average salary: {int(average)}")
